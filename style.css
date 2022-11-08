@@ -796,5 +796,9 @@ padding: 25px 8px !important;
   .intro-title{
     font-size: 35px;
   }
+  .feat-card img{
+    height: auto;
+    width: 50px;
+  }
 }
 

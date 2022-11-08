@@ -782,3 +782,19 @@ footer a:hover::before {
     width: 50%;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .banner-row{
+padding: 25px 8px !important;
+  }
+  .high-row{
+    padding: 5px 40px !important;
+  }
+  .intro-wrap{
+    padding-left: 0;
+  }
+  .intro-title{
+    font-size: 35px;
+  }
+}
+

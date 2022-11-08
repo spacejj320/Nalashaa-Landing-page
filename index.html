@@ -8,57 +8,384 @@
 
     <!-- css links -->
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <!-- Header Section -->
-    <header class="header" id="header">
-      <nav class="navbar container">
-        <a href="./index.html" class="brand logo-img"
-          ><img src="./assets/img/logo.png" alt="" srcset=""
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid header">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="./assets/img/logo.png"
+            alt=""
+            class="d-inline-block align-text-top logo-img"
         /></a>
-        <div class="burger" id="burger">
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
-        </div>
-        <div class="menu" id="menu">
-          <ul class="menu-inner">
-            <li class="menu-item">
-              <a href="#" class="menu-link">About us</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link navbar-link" href="#">About us</a>
             </li>
-            <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
+            <li class="nav-item">
+              <a class="nav-link navbar-link" href="#">Contact</a>
+            </li>
           </ul>
         </div>
-        <a href="./index.html" class="menu-block">Explore</a>
-      </nav>
-    </header>
-    <!-- Main Section -->
-    <main class="main">
-      <section class="section banner banner-section">
-        <div class="container banner-column">
-          <img
-            class="banner-image"
-            src="./assets/img/banner-bg.gif"
-            alt="banner"
-          />
-          <div class="banner-inner">
-            <h1 class="heading-xl">Mobile App Development</h1>
-            <p class="paragraph">
-              Transform your ideas into innovative apps that helps you connect
-              with customers, partners, and employees.
-            </p>
-            <button class="btn btn-darken btn-inline">
-              Start Now <i class="bx bx-right-arrow-alt"></i>
-            </button>
+      </div>
+    </nav>
+    <!-- navbar ends -->
+
+    <section class="banner">
+      <div class="container-fluid">
+        <div class="row banner-row">
+          <div class="col-12 col-md-6">
+            <div>
+              <h1 class="main-title">Mobile App Development</h1>
+              <p class="main-para">
+                Transform your ideas into innovative apps that helps you connect
+                with customers, partners, and employees.
+              </p>
+              <a href="#" class="main-cta">Get Started</a>
+            </div>
           </div>
-          <div class="banner-links">
-            <a href="#" title=""><i class="bx bxl-facebook"></i></a>
-            <a href="#" title=""><i class="bx bxl-instagram"></i></a>
-            <a href="#" title=""><i class="bx bxl-twitter"></i></a>
-            <a href="#" title=""><i class="bx bxl-youtube"></i></a>
+          <div class="col-12 col-md-6">
+            <div class="d-flex justify-content-center">
+              <img
+                src="./assets/img/banner-bg.gif"
+                class="banner-gif"
+                alt=""
+                srcset=""
+              />
+            </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+    <section class="highlight">
+      <div class="container-fluid">
+        <div class="row high-row">
+          <div class="high-label">
+            <span class="high-span">Highlights</span>
+          </div>
+        </div>
+        <div class="row high-row">
+          <div class="high-wrap">
+            <div class="d-flex align-items-center">
+              <img
+                src="./assets/icons/h-1.png"
+                class="high-icon"
+                alt=""
+                srcset=""
+              />
+              <div class="ml-6p">
+                <h4 class="high-title">40 Hours</h4>
+                <span class="high-sub">of free assessment & proposal</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <img
+                src="./assets/icons/h-2.png"
+                class="high-icon"
+                alt=""
+                srcset=""
+              />
+              <div class="ml-6p">
+                <h4 class="high-title">Pre-baked</h4>
+                <span class="high-sub">Pre-baked technical designs</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <img
+                src="./assets/icons/h-3.png"
+                class="high-icon"
+                alt=""
+                srcset=""
+              />
+              <div class="ml-6p">
+                <h4 class="high-title">UX</h4>
+                <span class="high-sub">Design templates</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner section ends -->
+    <section class="intro">
+      <div class="container-fluid">
+        <div class="row row-pad">
+          <div class="col-12 col-md-4">
+            <img
+              src="./assets/img/intro.png"
+              class="intro-img"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="col-12 col-md-8">
+            <div class="intro-wrap">
+              <span class="intro-span">Introduction</span>
+              <h2 class="intro-title">
+                Mobile apps have become<br />the norm for businesses
+              </h2>
+              <p class="intro-para">
+                To thrive. Modern consumers demand platforms that offer
+                immersive engagement, ubiquitous collaboration, and delightful
+                experiences. Businesses across the globe are looking to break
+                the shackles of on-premises systems and extend their reach to
+                the last mile, where consumers are mobile users. If you too are
+                looking to transform your business by redefining how your
+                customers perceive you, your employees engage with you and how
+                your partners collaborate with you, here are a few use cases
+                right off the bat:
+              </p>
+              <div class="intro-box-wrap">
+                <a href="#" class="intro-boxes">Onboarding</a>
+                <a href="#" class="intro-boxes">Events & Collaboration</a>
+                <a href="#" class="intro-boxes">Sales Quotes</a>
+                <a href="#" class="intro-boxes"> Asset Management</a>
+                <a href="#" class="intro-boxes">E-Communication</a>
+                <a href="#" class="intro-boxes">Field Service</a>
+                <a href="#" class="intro-boxes">Customer Service</a>
+                <a href="#" class="intro-boxes">Cataloguing</a>
+                <a href="#" class="intro-boxes">Scheduling</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- intro section ends -->
+    <section class="why-mobile">
+      <div class="container-fluid">
+        <div class="row row-pad">
+          <h3 class="sub-title ptb-30">
+            Why <span class="sub-title-bold">Go Mobile</span>
+          </h3>
+        </div>
+        <div class="row row-pad why-bg">
+          <div class="col-4 why-col">
+            <div>
+              <img
+                src="./assets/icons/why-1.png"
+                class="why-numbers"
+                alt=""
+                srcset=""
+              />
+              <h4 class="why-h4">Cultivate Customer Loyalty</h4>
+              <p class="why-para">
+                Mobile apps have personalized content, notifications, and
+                reminders, helping customers stay updated and engaged at all
+                times.
+              </p>
+              <ul class="why-ul">
+                <li>Deeper engagement, frequent touchpoints</li>
+                <li>Meet your customers where they are</li>
+                <li>Richer consumer experience</li>
+              </ul>
+            </div>
+            <div>
+              <img
+                src="./assets/icons/why-3.png"
+                class="why-numbers"
+                alt=""
+                srcset=""
+              />
+              <h4 class="why-h4">Nimble Leadership/Management</h4>
+              <p class="why-para">
+                Mobile apps grant decision-makers the ability to take informed
+                and updated business decisions on the go.
+              </p>
+              <ul class="why-ul">
+                <li>KPI’s at your fingertips at all times</li>
+                <li>Improved responsiveness</li>
+                <li>Enhanced approachability & visibility</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4">
+            <img
+              src="./assets/img/why-mobile.png"
+              class="why-mobile-img"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="col-4 why-col">
+            <div>
+              <img
+                src="./assets/icons/why-2.png"
+                class="why-numbers"
+                alt=""
+                srcset=""
+              />
+              <h4 class="why-h4">Foster Employee Empowerment</h4>
+              <p class="why-para">
+                Mobile apps make it easier for teams to monitor critical
+                business processes by allowing ubiquitous access to business
+                data.
+              </p>
+              <ul class="why-ul">
+                <li>Ubiquitous connectivity, powered collaboration</li>
+                <li>Immersive learning, communication & feedback</li>
+                <li>Improved productivity</li>
+              </ul>
+            </div>
+            <div>
+              <img
+                src="./assets/icons/why-4.png"
+                class="why-numbers"
+                alt=""
+                srcset=""
+              />
+              <h4 class="why-h4">Nurture Partnerships</h4>
+              <p class="why-para">
+                Mobile apps provide prompt query support and customized loyalty
+                programs, ensuring better collaborations.
+              </p>
+              <ul class="why-ul">
+                <li>Enable greater responsiveness</li>
+                <li>Build trust through transparency</li>
+                <li>Collaborate without overheads</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- why mobile section ends -->
+    <section class="solutions">
+      <div class="container-fluid">
+        <div class="row row-pad pt-100">
+          <div class="col-12 col-md-4 p-0">
+            <img src="./assets/img/sol.png" class="sol-img" alt="" srcset="" />
+          </div>
+          <div class="col-12 col-md-8 sol-bg">
+            <div>
+              <h3 class="sub-title ptb-30 sol-h3">
+                Possible Barriers and
+                <span class="sub-title-bold sol-span">Solutions</span>
+              </h3>
+              <div class="solwrap">
+                <div class="d-flex">
+                  <img
+                    src="./assets/icons/check.png"
+                    class="check-icon"
+                    alt=""
+                    srcset=""
+                  />
+                  <div class="ml-7">
+                    <h4 class="sol-sub">Too arduous to visualize</h4>
+                    <p class="sol-para">
+                      We translate your vision into a product concept
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <img
+                    src="./assets/icons/check.png"
+                    class="check-icon"
+                    alt=""
+                    srcset=""
+                  />
+                  <div class="ml-7">
+                    <h4 class="sol-sub">Puzzling tech choices</h4>
+                    <p class="sol-para">
+                      We take the suspense out of it, for you
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <img
+                    src="./assets/icons/check.png"
+                    class="check-icon"
+                    alt=""
+                    srcset=""
+                  />
+                  <div class="ml-7">
+                    <h4 class="sol-sub">Demands excessive oversight</h4>
+                    <p class="sol-para">
+                      Not really, we own end-to-end execution
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <img
+                    src="./assets/icons/check.png"
+                    class="check-icon"
+                    alt=""
+                    srcset=""
+                  />
+                  <div class="ml-7">
+                    <h4 class="sol-sub">Sounds too expensive</h4>
+                    <p class="sol-para">
+                      Not with our experience & pre-baked approach
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <img
+                    src="./assets/icons/check.png"
+                    class="check-icon"
+                    alt=""
+                    srcset=""
+                  />
+                  <div class="ml-7">
+                    <h4 class="sol-sub">Lack of resources</h4>
+                    <p class="sol-para">We act as your team, in spirit</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- solution section ends -->
+    <section class="features">
+      <div class="container-fluid">
+        <div class="row row-pad ptb-30">
+          <div>
+            <h3 class="sub-title ptb-30">
+              Our
+              <span class="sub-title-bold">Features</span>
+            </h3>
+          </div>
+        </div>
+        <div class="row row-pad ptb-30">
+          <div class="feat-card">
+            <img
+              src="./assets/icons/feat-1.png"
+              class="feat-icon"
+              alt=""
+              srcset=""
+            />
+            <h4 class="feat-point">Design exquisite User Experiences</h4>
+            <p class="feat-para">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              ectetur adipiscing elit, sed
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
